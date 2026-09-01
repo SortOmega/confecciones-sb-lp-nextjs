@@ -1,20 +1,27 @@
-import type { Metadata } from "next";
-import "./globals.scss";
+import type { Metadata } from 'next';
+import './globals.scss';
+import { NavigationBar } from '@/src/components/server/NavigationBar/NavigationBar';
 
 export const metadata: Metadata = {
-  title: "Confecciones SB",
-  description: "Confecciones SB es una empresa dedicada a la confección de ropa de calidad con estilos y diseños personalizados.",
-  keywords: ["Confecciones SB", "ropa de calidad", "estilos personalizados", "diseños únicos", "moda a medida"],
+  title: 'Confecciones SB',
+  description:
+    'Confecciones SB es una empresa dedicada a la confección de ropa de calidad con estilos y diseños personalizados.',
+  keywords: [
+    'Confecciones SB',
+    'ropa de calidad',
+    'estilos personalizados',
+    'diseños únicos',
+    'moda a medida',
+  ],
   authors: [{ name: 'Sortomega', url: 'https://www.github.com/SortOmega' }],
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html
-      lang="en"
-      className={`antialiased`}
-    >
-      <body className="grid h-dvh overflow-hidden">{children}</body>
+    <html lang="en" className={`antialiased`}>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }

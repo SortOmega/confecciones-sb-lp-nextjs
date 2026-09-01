@@ -1,7 +1,15 @@
-import Image from "next/image";
+import { HomePageContent, NavigationBar } from '@/src/components/server';
+import Image from 'next/image';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <h1 className="text-3xl font-bold">Welcome to Confecciones SB</h1>
+    <>
+      <header>
+        <NavigationBar />
+      </header>
+      <main>
+        <HomePageContent />
+      </main>
+    </>
   );
 }
