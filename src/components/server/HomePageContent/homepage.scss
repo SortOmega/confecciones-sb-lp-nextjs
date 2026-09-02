@@ -1,0 +1,11 @@
+@use '../../../styles/palette.scss' as palette;
+
+main {
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  overflow-y: auto;
+  background: palette.$color-bg-primary-red;
+}

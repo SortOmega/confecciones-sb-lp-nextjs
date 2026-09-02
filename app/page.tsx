@@ -7,9 +7,7 @@ export default function HomePage() {
       <header>
         <NavigationBar />
       </header>
-      <main>
-        <HomePageContent />
-      </main>
+      <HomePageContent />
     </>
   );
 }
