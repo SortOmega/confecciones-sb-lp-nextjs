@@ -1,0 +1,21 @@
+.responsive-container,
+.rspnsv {
+  /// Centra el contenido horizontalmente
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  /// Ajusta el padding horizontal según el tamaño de la pantalla
+  @media (max-width: 767px) {
+    padding: 0rem 1rem;
+  }
+  @media (max-width: 1399px) and (min-width: 768px) {
+    padding: 0rem 2rem;
+  }
+  /// Ajusta el ancho máximo del contenido para pantallas grandes
+  @media (min-width: 1400px) {
+    width: 1200px;
+  }
+}
