@@ -22,8 +22,25 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
   display: grid;
-  grid-template-rows: auto 1fr;
-  height: 100dvh;
+  grid-template-rows: 1fr;
   overflow: hidden;
+  width: 100%;
+}
+
+main {
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
 }
