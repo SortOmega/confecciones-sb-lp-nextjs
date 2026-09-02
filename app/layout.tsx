@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import './globals.scss';
-import { NavigationBar } from '@/src/components/server/NavigationBar/NavigationBar';
 
 export const metadata: Metadata = {
   title: 'Confecciones SB',
