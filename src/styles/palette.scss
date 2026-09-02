@@ -1,0 +1,43 @@
+//#region BACKGROUND COLORS
+$color-bg-primary-red: #1e1414;
+$color-bg-primary-blue: #12131e;
+$color-bg-rad-blue: radial-gradient(
+  circle,
+  rgba(72, 96, 203, 0.45) 0%,
+  rgba(210, 210, 210, 0.2) 100%
+);
+$color-bg-rad-green: radial-gradient(
+  circle,
+  rgba(68, 186, 50, 0.1) 0%,
+  rgba(172, 172, 172, 0.2) 100%
+);
+$color-bg-rad-red: radial-gradient(
+  circle,
+  rgba(255, 83, 107, 0.1) 0%,
+  rgba(210, 210, 210, 0.2) 100%
+);
+$color-bg-rad-dark: radial-gradient(
+  circle,
+  rgba(213, 213, 213, 0.3) 0%,
+  rgba(172, 172, 172, 0.2) 100%
+);
+//#endregion BACKGROUND COLORS
+//#region SCROOLLBAR COLORS
+$color-scrollbar-track: radial-gradient(
+  circle,
+  rgba(72, 96, 203, 0.1) 0%,
+  rgba(210, 210, 210, 0) 30%,
+  rgba(255, 83, 107, 0.1) 50%,
+  rgba(210, 210, 210, 0) 100%
+);
+$color-scrollbar-thumb: #3b3b3b;
+$color-scrollbar-thumb-hover: #5a5a5a;
+//#endregion SCROOLLBAR COLORS
+//#region TEXT COLORS
+$color-text-primary: #f2f2f2ff;
+$color-text-secondary: #ecececcc;
+$color-text-tertiary: #ececec99;
+//#endregion TEXT COLORS
+//#region STROKE COLORS
+$color-stroke-red: linear-gradient(48deg, #ff536b00 0%, #ff0024ff 49%, #ff536b00 100%);
+$color-stroke-blue: linear-gradient(-45deg, #5581ffff 0%, #ffffff30 49%);
