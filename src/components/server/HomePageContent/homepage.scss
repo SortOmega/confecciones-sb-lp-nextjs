@@ -5,6 +5,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
   overflow-y: auto;
   background: palette.$color-bg-primary-red;
 }
