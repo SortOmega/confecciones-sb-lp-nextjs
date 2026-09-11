@@ -1,4 +1,5 @@
 @use 'tailwindcss';
+@use '../src/styles/palette.scss' as palette;
 
 :root {
   --background: #ffffff;
@@ -29,4 +30,25 @@ header {
   grid-template-rows: 1fr;
   overflow: hidden;
   width: 100%;
+}
+
+/* SCROLLBAR STYLES */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: palette.$color-scrollbar-track;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: palette.$color-scrollbar-thumb;
+  border-radius: 0.1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: palette.$color-scrollbar-thumb-hover;
 }
