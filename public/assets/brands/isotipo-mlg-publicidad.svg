@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   version="1.1"
+   id="svg37"
+   sodipodi:docname="isotipo-mlg-publicidad.svg"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs37" />
+  <sodipodi:namedview
+     id="namedview37"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="in"
+     inkscape:zoom="2.8008121"
+     inkscape:cx="198.15682"
+     inkscape:cy="127.10599"
+     inkscape:window-width="1920"
+     inkscape:window-height="1006"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg37" />
+  <g
+     id="g5"
+     transform="matrix(0.36745568,0,0,0.36745568,7.9999986,40.337936)">
+    <g
+       id="g2">
+      <polygon
+         points="280.07,41.5 238.57,0 0,238.57 238.57,477.13 385.56,330.14 327.58,330.14 238.57,419.15 57.98,238.57 70.42,226.13 82.44,238.16 216.98,372.7 238.98,394.7 267.97,365.71 245.97,343.71 111.43,209.16 99.41,197.14 238.57,57.98 251.08,70.49 123.94,197.63 152.93,226.62 280.07,99.48 328.73,148.14 386.71,148.14 309.06,70.49 321.57,57.98 411.73,148.14 469.71,148.14 321.57,0 "
+         id="polygon1" />
+      <polygon
+         points="410.58,330.14 321.49,419.23 350.48,448.22 468.56,330.14 "
+         id="polygon2" />
+    </g>
+    <g
+       id="g4">
+      <path
+         d="m 278,230.06 v 74.66 H 244.92 V 172.41 h 28.36 l 47.25,60 47.26,-60 h 28.35 v 132.31 h -33.08 v -74.66 l -42.53,51 z"
+         id="path2" />
+      <path
+         d="m 426.2,172.41 h 33.08 v 104 h 61.43 v 28.35 H 426.2 Z"
+         id="path3" />
+      <path
+         d="m 653.13,285.82 a 13,13 0 0 1 -1.79,2.84 q -20.79,20.79 -50.19,20.79 -29.4,0 -50.15,-20.74 -20.74,-20.71 -20.73,-50.14 0.01,-29.43 20.73,-50.14 20.75,-20.75 50.14,-20.75 29.39,0 50.19,20.7 c 0.38,0.44 0.75,0.85 1.13,1.23 l -24.46,22.3 -0.09,-0.09 a 37.83,37.83 0 0 0 -53.5,53.49 38.25,38.25 0 0 0 45.65,6.15 v -37.62 h 33.08 z"
+         id="path4" />
+    </g>
+  </g>
+</svg>
