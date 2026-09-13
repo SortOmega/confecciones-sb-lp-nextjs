@@ -26,7 +26,7 @@ const [isScrolled, setIsScrolled] = useState(false);
 
   return (
     <nav className={`navigation-bar text-xs md:text-base lg:text-xl border-b-2 ${!isScrolled ? 'border-transparent' : ''} ${isScrolled ? 'crystalScrolled backdrop-blur-xs box-shadow border-b-[#87878733]' : ''}`}>
-      <ul className='max-w-'>
+      <ul>
         <li>
           <Link href="/">Home</Link>
         </li>
