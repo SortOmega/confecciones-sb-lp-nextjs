@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html lang="en" className={`antialiased`}>
+    <html lang="es" className={`antialiased`}>
       <body>
         {children}
       </body>
