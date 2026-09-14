@@ -40,18 +40,20 @@ figure > figcaption {
   position: absolute;
   z-index: 1;
   bottom: 0.5rem;
-  left: 50%;
+  left: 0.5rem;
+  right: 0.5rem;
   padding: 0.35rem 0.6rem;
   border-radius: 0.25rem;
   background: rgb(0 0 0 / 80%);
   color: #fff;
   font-size: 0.875rem;
   line-height: 1.2;
-  white-space: nowrap;
+  text-align: center;
+  overflow-wrap: anywhere;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translate(-50%, 0.5rem);
+  transform: translateY(0.5rem);
   transition:
     opacity 150ms ease,
     visibility 150ms ease,
@@ -62,7 +64,7 @@ figure:hover > figcaption,
 figure:focus-within > figcaption {
   opacity: 1;
   visibility: visible;
-  transform: translate(-50%, 0);
+  transform: translateY(0);
 }
 
 /* SCROLLBAR STYLES */
