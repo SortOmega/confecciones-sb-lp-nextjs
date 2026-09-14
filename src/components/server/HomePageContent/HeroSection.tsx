@@ -1,5 +1,4 @@
-import './herosection.scss';
-import '@/src/styles/responsive.scss';
+import './HeroSection.scss';
 import { Carousel } from '../../client/Carousel/Carousel';
 import { Montserrat } from 'next/font/google';
 
