@@ -1,4 +1,5 @@
 'use client';
+import './ServiceCard.scss';
 
 import type { CSSProperties, PointerEvent, ReactNode } from 'react';
 

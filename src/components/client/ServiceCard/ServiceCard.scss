@@ -1,0 +1,70 @@
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  min-height: 19rem;
+  padding: 2rem 1.5rem 1.5rem;
+  border: 1px solid rgb(150 166 220 / 38%);
+  border-radius: 1.25rem;
+  background:
+    radial-gradient(
+      circle at var(--pointer-x, 50%) var(--pointer-y, 50%),
+      rgb(141 174 255 / var(--glow-opacity, 0)) 0%,
+      rgba(44, 104, 255, 0) 42%
+    ),
+    radial-gradient(
+      circle,
+      rgb(24 33 86 / 80%) 0%,
+      rgb(48 60 100 / 72%) 60%,
+      rgb(65 70 107 / 72%) 100%
+    );
+  box-shadow: 0 1rem 1.75rem rgb(0 0 0 / 18%);
+  transform: perspective(900px) rotateX(var(--rotate-x, 0deg)) rotateY(var(--rotate-y, 0deg));
+  text-align: center;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease;
+  will-change: transform;
+
+  &:hover {
+    --glow-opacity: 48%;
+
+    border-color: rgb(85 129 255 / 90%);
+    background: rgb(66 73 119 / 82%);
+    background:
+      radial-gradient(
+        circle at var(--pointer-x, 50%) var(--pointer-y, 50%),
+        rgb(141 174 255 / var(--glow-opacity)) 0%,
+        rgb(141 174 255 / 0%) 42%
+      ),
+      rgb(66 73 119 / 82%);
+    transform: perspective(900px) rotateX(var(--rotate-x, 0deg)) rotateY(var(--rotate-y, 0deg))
+      translateY(-0.25rem);
+  }
+
+  .service-icon {
+    display: block;
+    width: 5.5rem;
+    height: 7rem;
+    margin-bottom: 1.75rem;
+    object-fit: contain;
+    opacity: 0.85;
+  }
+
+  h4 {
+    margin: 0 0 0.75rem;
+    color: #f2f2f2;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  p {
+    max-width: 19rem;
+    margin: 0;
+    color: rgb(236 236 236 / 72%);
+    line-height: 1.35;
+  }
+}
