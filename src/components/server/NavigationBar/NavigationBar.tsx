@@ -28,17 +28,17 @@ const [isScrolled, setIsScrolled] = useState(false);
     <nav className={`navigation-bar text-xs md:text-base lg:text-xl border-b-2 ${!isScrolled ? 'border-transparent' : ''} ${isScrolled ? 'crystalScrolled backdrop-blur-xs box-shadow border-b-[#87878733]' : ''}`}>
       <ul>
         <li>
-          <Link href="/">Home</Link>
+          <a href="#hero-section">Home</a>
         </li>
         <li>
-          <Link href="/about">About</Link>
+          <a href="#value-proposition-section">Servicios</a>
+        </li>
+        {/* <li>
+          <a href="/services">Services</a>
         </li>
         <li>
-          <Link href="/services">Services</Link>
-        </li>
-        <li>
-          <Link href="/contact">Contact</Link>
-        </li>
+          <a href="/contact">Contact</a>
+        </li> */}
       </ul>
     </nav>
   );

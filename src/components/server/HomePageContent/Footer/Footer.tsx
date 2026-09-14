@@ -2,7 +2,7 @@ const authorUrl = 'https://github.com/SortOmega';
 
 export function Footer() {
   return (
-    <footer className="relative w-full py-4 md:py-6 flex flex-col items-center justify-center gap-4 md:gap-8  border-t border-white/10 bg-[radial-gradient(circle_at_16%_0%,rgb(255_83_107_/_12%),transparent_34%),linear-gradient(145deg,#17131b_0%,#11131f_100%)] text-gray-100">
+    <footer id="footer-section" className="relative w-full py-4 md:py-6 flex flex-col items-center justify-center gap-4 md:gap-8  border-t border-white/10 bg-[radial-gradient(circle_at_16%_0%,rgb(255_83_107_/_12%),transparent_34%),linear-gradient(145deg,#17131b_0%,#11131f_100%)] text-gray-100">
       <div className="section-content rspnsv">
         <div className="credits w-full flex flex-row justify-between items-center gap-8 flex-wrap md:flex-nowrap py-3 md:py-4">
           <div className="max-w-sm">

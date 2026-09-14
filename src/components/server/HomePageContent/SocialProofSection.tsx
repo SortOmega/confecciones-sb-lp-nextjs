@@ -3,7 +3,7 @@ import './SocialProofSection.scss';
 export const SocialProofSection = () => {
   return (
     <section className="socialproof-section relative w-full py-4 md:py-6 flex flex-col items-center justify-center gap-4 md:gap-8">
-      <div className="section-content rspnsv">
+      <div className="section-content rspnsv" id="socialproof-section">
         <h3 className="text-2xl md:text-3xl text-gray-50 text-center font-black my-4 md:my-6">
           Nuestros Clientes
         </h3>

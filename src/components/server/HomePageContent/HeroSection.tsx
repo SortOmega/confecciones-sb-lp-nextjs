@@ -11,7 +11,7 @@ const ftMonserrat = Montserrat({
 
 export const HeroSection = () => {
   return (
-    <section className="hero-section relative w-full pt-24 md:pt-30 flex flex-col items-center justify-center gap-4 md:gap-8">
+    <section id='hero-section' className="hero-section relative w-full pt-24 md:pt-30 flex flex-col items-center justify-center gap-4 md:gap-8">
       <div className="section-content rspnsv">
         <h1
           className="text-4xl md:text-5xl text-gray-50 text-center font-black my-4"

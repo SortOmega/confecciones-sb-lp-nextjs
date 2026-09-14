@@ -3,7 +3,7 @@ import { ServiceCard } from '@/src/components/client/ServiceCard/ServiceCard';
 
 export const ValuePropositionSection = () => {
   return (
-    <section className="value-proposition-section relative w-full py-4 md:py-6 flex flex-col items-center justify-center gap-4 md:gap-8">
+    <section id="value-proposition-section" className="value-proposition-section relative w-full py-4 md:py-6 flex flex-col items-center justify-center gap-4 md:gap-8">
       <div className="bg-patron">
         <div className="circle-blueshadow"></div>
         <div className="circle-shine"></div>
