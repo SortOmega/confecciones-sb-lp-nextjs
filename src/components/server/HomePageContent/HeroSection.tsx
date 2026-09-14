@@ -20,7 +20,7 @@ export const HeroSection = () => {
           Confecciones SB
         </h1>
         <h2
-          className="text-lg md:text-xl text-gray-200 opacity-80 inline-flex flex-col text-center font-bold"
+          className="text-lg md:text-xl text-gray-200 opacity-80 inline-flex flex-col my-3 md:my-4 text-center font-bold"
           style={{ fontFamily: ftMonserrat.style.fontFamily }}
         >
           <span> Confección de ropa de calidad y personalizadas </span>
