@@ -1,0 +1,12 @@
+section.socialproof-section {
+  .customer-item {
+    display: flex;
+    flex-direction: column;
+    height: 6rem;
+    img {
+      height: 100%;
+      object-fit: contain;
+      aspect-ratio: 4/3;
+    }
+  }
+}
