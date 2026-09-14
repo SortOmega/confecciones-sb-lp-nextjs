@@ -1,4 +1,5 @@
 import './ValuePropositionSection.scss';
+import { ServiceCard } from '@/src/components/client/ServiceCard/ServiceCard';
 
 export const ValuePropositionSection = () => {
   return (
@@ -19,56 +20,56 @@ export const ValuePropositionSection = () => {
         </p>
 
         <div className="services-list py-3 md:py-4">
-          <div className="service-item">
+          <ServiceCard>
             <img className="service-icon" src="/assets/icons/custom-post-type-svgrepo-com.svg" alt="Icono de personalización" />
             <h4>Personalización</h4>
             <p>
               Ofrecemos una amplia gama de opciones de personalización para que tu producto sea
               único y refleje tu estilo.
             </p>
-          </div>
+          </ServiceCard>
 
-          <div className="service-item">
+          <ServiceCard>
             <img className="service-icon" src="/assets/icons/diamond-svgrepo-com.svg" alt="Icono de una joya brillando" />
             <h4>Calidad</h4>
             <p>
               Nos aseguramos de que cada producto cumpla con los más altos estándares de calidad
               para tu satisfacción.
             </p>
-          </div>
+          </ServiceCard>
 
-          <div className="service-item">
+          <ServiceCard>
             <img className="service-icon" src="/assets/icons/price-tag-svgrepo-com.svg" alt="Icono de una etiqueta de precios" />
             <h4>Precios Asequibles</h4>
             <p>Facilidad para adquirir lo que más deseas sin lastimar tu cartera</p>
-          </div>
+          </ServiceCard>
 
-          <div className="service-item">
+          <ServiceCard>
             <img className="service-icon" src="/assets/icons/options-determine-examine-analyze-svgrepo-com.svg" alt="Icono de una persona escogiendo entre un elemento u otro" />
             <h4>Variedad</h4>
             <p>
               Amplia selección de telas, materiales y diseños para que encuentres la perfecta para
               tu proyecto.
             </p>
-          </div>
+          </ServiceCard>
 
-          <div className="service-item">
+          <ServiceCard>
             <img className="service-icon" src="/assets/icons/price-tag-percent-svgrepo-com.svg" alt="Icono de una etiqueta de precios con porcentaje" />
             <h4>Mayoreo</h4>
             <p>
               Ofrecemos precios especiales para compras de mayor cantidad, ideal para empresas y
               profesionales.
             </p>
-          </div>
+          </ServiceCard>
 
-          <div className="service-item">
+          <ServiceCard>
             <img className="service-icon" src="/assets/icons/loyalty-svgrepo-com.svg" alt="Icono de lealtad" />
             <h4>Lealtad</h4>
             <p>
               Ofrecemos un programa de lealtad para nuestros clientes frecuentes, con beneficios
               exclusivos y descuentos especiales.
             </p>
-          </div>
+          </ServiceCard>
         </div>
       </div>
     </section>
