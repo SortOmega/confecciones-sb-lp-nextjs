@@ -11,7 +11,7 @@ export const SocialProofSection = () => {
         <div className="customers-list flex flex-wrap justify-around py-2 md:py-3 gap-4 md:gap-8">
           <figure className="customer-item">
             <img src="/assets/brands/isotipo-simple-esc-francisco-morazan-zacapa.svg" alt="Isotipo Escuela Francisco Morazán en San Pedro Zacapa"/>
-            <figcaption>Escuela Francisco Morazán</figcaption>
+            <figcaption>Escuela Francisco Morazán, Zacapa S.B.</figcaption>
           </figure>
           <figure className="customer-item">
             <img src="/assets/brands/isotipo-mlg-publicidad.svg" className="text-white" alt="Isotipo de MLG Publicidad" />
