@@ -32,6 +32,17 @@ header {
   width: 100%;
 }
 
+.cta-link {
+  background: linear-gradient(30deg, #e11d48 10%, #be185d 30%, #ec4899 90%);
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+  &:hover {
+    background: linear-gradient(30deg, #dc2f54 10%, #cb3070 30%, #ec4899 90%);
+    box-shadow: 0 0 0.3rem 0.2rem #fc9be280;
+  }
+}
+
 figure {
   position: relative;
 }
