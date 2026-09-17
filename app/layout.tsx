@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.scss';
 
 export const metadata: Metadata = {
@@ -13,6 +13,13 @@ export const metadata: Metadata = {
     'moda a medida',
   ],
   authors: [{ name: 'Sortomega', url: 'https://www.github.com/SortOmega' }],
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
