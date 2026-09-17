@@ -3,8 +3,7 @@
   flex-direction: column;
   align-items: center;
   min-width: 0;
-  min-height: 19rem;
-  padding: 2rem 1.5rem 1.5rem;
+  min-height: 16rem;
   border: 1px solid rgb(150 166 220 / 38%);
   border-radius: 1.25rem;
   background:
@@ -46,23 +45,20 @@
 
   .service-icon {
     display: block;
-    width: 5.5rem;
-    height: 7rem;
-    margin-bottom: 1.75rem;
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.3rem;
     object-fit: contain;
     opacity: 0.85;
   }
 
   h4 {
-    margin: 0 0 0.75rem;
     color: #f2f2f2;
-    font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.25;
   }
 
   p {
-    max-width: 19rem;
     margin: 0;
     color: rgb(236 236 236 / 72%);
     line-height: 1.35;

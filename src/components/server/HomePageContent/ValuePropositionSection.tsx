@@ -22,8 +22,8 @@ export const ValuePropositionSection = () => {
         <div className="services-list py-3 md:py-4">
           <ServiceCard>
             <img className="service-icon" src="/assets/icons/custom-post-type-svgrepo-com.svg" alt="Icono de personalización" />
-            <h4>Personalización</h4>
-            <p>
+            <h4 className='text-md md:text-xl py-2 md:py-4'>Personalización</h4>
+            <p className='text-sm md:text-md lg:text-lg'>
               Ofrecemos una amplia gama de opciones de personalización para que tu producto sea
               único y refleje tu estilo.
             </p>
@@ -31,8 +31,8 @@ export const ValuePropositionSection = () => {
 
           <ServiceCard>
             <img className="service-icon" src="/assets/icons/diamond-svgrepo-com.svg" alt="Icono de una joya brillando" />
-            <h4>Calidad</h4>
-            <p>
+            <h4 className='text-md md:text-xl py-2 md:py-4'>Calidad</h4>
+            <p className='text-sm md:text-md lg:text-lg'>
               Nos aseguramos de que cada producto cumpla con los más altos estándares de calidad
               para tu satisfacción.
             </p>
@@ -40,14 +40,14 @@ export const ValuePropositionSection = () => {
 
           <ServiceCard>
             <img className="service-icon" src="/assets/icons/price-tag-svgrepo-com.svg" alt="Icono de una etiqueta de precios" />
-            <h4>Precios Asequibles</h4>
-            <p>Facilidad para adquirir lo que más deseas sin lastimar tu cartera</p>
+            <h4 className='text-md md:text-xl py-2 md:py-4'>Precios Asequibles</h4>
+            <p className='text-sm md:text-md lg:text-lg'>Facilidad para adquirir lo que más deseas sin lastimar tu cartera</p>
           </ServiceCard>
 
           <ServiceCard>
             <img className="service-icon" src="/assets/icons/options-determine-examine-analyze-svgrepo-com.svg" alt="Icono de una persona escogiendo entre un elemento u otro" />
-            <h4>Variedad</h4>
-            <p>
+            <h4 className='text-md md:text-xl py-2 md:py-4'>Variedad</h4>
+            <p className='text-sm md:text-md lg:text-lg'>
               Amplia selección de telas, materiales y diseños para que encuentres la perfecta para
               tu proyecto.
             </p>
@@ -55,8 +55,8 @@ export const ValuePropositionSection = () => {
 
           <ServiceCard>
             <img className="service-icon" src="/assets/icons/price-tag-percent-svgrepo-com.svg" alt="Icono de una etiqueta de precios con porcentaje" />
-            <h4>Mayoreo</h4>
-            <p>
+            <h4 className='text-md md:text-xl py-2 md:py-4'>Mayoreo</h4>
+            <p className='text-sm md:text-md lg:text-lg'>
               Ofrecemos precios especiales para compras de mayor cantidad, ideal para empresas y
               profesionales.
             </p>
@@ -64,8 +64,8 @@ export const ValuePropositionSection = () => {
 
           <ServiceCard>
             <img className="service-icon" src="/assets/icons/loyalty-svgrepo-com.svg" alt="Icono de lealtad" />
-            <h4>Lealtad</h4>
-            <p>
+            <h4 className='text-md md:text-xl py-2 md:py-4'>Lealtad</h4>
+            <p className='text-sm md:text-md lg:text-lg'>
               Ofrecemos un programa de lealtad para nuestros clientes frecuentes, con beneficios
               exclusivos y descuentos especiales.
             </p>

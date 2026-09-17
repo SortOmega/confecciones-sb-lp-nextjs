@@ -1,5 +1,13 @@
 'use client';
 import './ServiceCard.scss';
+import { Montserrat } from 'next/font/google';
+
+const ftMonserrat = Montserrat({
+  weight: ['400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-montserrat',
+});
 
 import type { CSSProperties, PointerEvent, ReactNode } from 'react';
 
@@ -40,11 +48,12 @@ export function ServiceCard({ children }: ServiceCardProps) {
     '--pointer-y': '50%',
     '--rotate-x': '0deg',
     '--rotate-y': '0deg',
+    fontFamily: ftMonserrat.style.fontFamily,
   };
 
   return (
     <div
-      className="service-item"
+      className="service-item p-3 md:p-6"
       style={style}
       onPointerMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}
