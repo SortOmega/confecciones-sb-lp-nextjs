@@ -1,8 +1,11 @@
 .service-item {
+  @media screen and (max-width: 767.99px) {
+    min-width: 12rem;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 0;
+
   min-height: 16rem;
   border: 1px solid rgb(150 166 220 / 38%);
   border-radius: 1.25rem;

@@ -53,7 +53,7 @@ export function ServiceCard({ children }: ServiceCardProps) {
 
   return (
     <div
-      className="service-item p-3 md:p-6"
+      className="service-item p-3 md:p-6 select-none"
       style={style}
       // onPointerMove={handlePointerMove}
       // onPointerLeave={handlePointerLeave}
