@@ -11,14 +11,14 @@ export function Carousel() {
         <div className="row">
           <figure>
             <img
-              src="https://www.dropbox.com/scl/fi/p34ain2hwvlspi3euas81/thumbnail-450x600-IMG-combatiente-forestal.webp?rlkey=5j69941jtv29mvq23u30z1rwd&st=ewtj4pw3&raw=1"
+              src="https://www.dropbox.com/scl/fi/cs83cclhoqcf798o5jx73/thumbnail-300x400-IMG-combatiente-forestal.webp?rlkey=5or4tm9k6yoidq2s9egfwd9dc&st=ipzb5au6&raw=1"
               alt="Camiseta color gris oscuro con diseño de combatiente forestal"
             />
             <figcaption>Camiseta con diseño de combatiente forestal</figcaption>
           </figure>
           <figure>
             <img
-              src="https://www.dropbox.com/scl/fi/b8j46s64ixy7cyslr0xt9/thumbnail-450x600-IMG-lenca-formal-marron.webp?rlkey=zl8vngwc8a9dp4psq403uzj4h&st=pgarpkfq&raw=1"
+              src="https://www.dropbox.com/scl/fi/08icqxstktugl4wgda4wc/thumbnail-300x400-IMG-lenca-formal-marron.webp?rlkey=plk15s3f7o0r2lzgueyz0zzv8&st=d6idyopc&raw=1"
               alt="Camiseta color marrón con diseño formal con acentos lencas"
             />
             <figcaption>Camiseta con diseño formal con acentos lencas</figcaption>
