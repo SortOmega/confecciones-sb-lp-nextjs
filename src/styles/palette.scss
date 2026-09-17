@@ -23,13 +23,7 @@ $color-bg-rad-dark: radial-gradient(
 );
 //#endregion BACKGROUND COLORS
 //#region SCROOLLBAR COLORS
-$color-scrollbar-track: radial-gradient(
-  circle,
-  rgba(72, 96, 203, 0.1) 0%,
-  rgba(210, 210, 210, 0) 30%,
-  rgba(255, 83, 107, 0.1) 50%,
-  rgba(210, 210, 210, 0) 100%
-);
+$color-scrollbar-track: $color-bg-primary-red;
 $color-scrollbar-thumb: #3b3b3b;
 $color-scrollbar-thumb-hover: #5a5a5a;
 //#endregion SCROOLLBAR COLORS
