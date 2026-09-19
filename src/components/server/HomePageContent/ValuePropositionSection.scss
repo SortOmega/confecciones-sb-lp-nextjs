@@ -1,4 +1,5 @@
 section.value-proposition-section {
+  $bgPosAjustment: 24rem;
   .services-list {
     gap: 2rem;
     // width: max-content;
@@ -21,13 +22,18 @@ section.value-proposition-section {
 
   .bg-patron {
     position: absolute;
-    top: 0;
+    top: -$bgPosAjustment;
+    bottom: 0;
     display: flex;
     justify-content: center;
     width: 200dvw;
     z-index: -1;
+    overflow-y: hidden;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 520px) {
+      width: 180dvw;
+    }
+    @media screen and (min-width: 1200px) {
       width: 140dvw;
     }
 
@@ -42,7 +48,10 @@ section.value-proposition-section {
       &-dark,
       &-bluelight,
       &-shine {
-        top: 2rem;
+        top: $bgPosAjustment + 2rem;
+      }
+      &-blueshadow {
+        top: $bgPosAjustment;
       }
 
       &-dark {
@@ -69,7 +78,7 @@ section.value-proposition-section {
         border-radius: 100%;
         background: #ffffff;
         mix-blend-mode: color-dodge;
-        filter: blur(256px);
+        filter: blur(156px);
         // background: #12131e;
       }
       &-blueshadow {
@@ -79,7 +88,7 @@ section.value-proposition-section {
         border-radius: 100%;
         background: linear-gradient(180deg, #5581ff 0%, #bcf4f800 100%);
         mix-blend-mode: color-dodge;
-        filter: blur(256px);
+        filter: blur(156px);
         // background: #12131e;
       }
     }
