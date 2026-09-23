@@ -1,13 +1,21 @@
 import './HeroSection.scss';
 import { Carousel } from '../../client/Carousel/Carousel';
-import { Montserrat } from 'next/font/google';
+import { Montserrat, Niconne } from 'next/font/google';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const ftMonserrat = Montserrat({
   weight: ['400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-montserrat',
+});
+
+const ftNiconne = Niconne({
+  weight: ['400'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-niconne',
 });
 
 export const HeroSection = () => {
@@ -18,11 +26,18 @@ export const HeroSection = () => {
       style={{ fontFamily: ftMonserrat.style.fontFamily }}
     >
       <div className="section-content rspnsv">
+        <Image
+          className="-ml-8 md:-ml-10 lg:-ml-14 w-40! md:w-50! lg:w-60! drop-shadow-md drop-shadow-orange-800"
+          src="/assets/brands/isotipo-confecciones-bardales.svg"
+          alt="Isotipo de Confecciones Bardales"
+          width={16}
+          height={16}
+          loading="eager"
+        />
         <h1
-          className="text-4xl md:text-5xl text-gray-50 text-center font-black my-4"
-
+          className={`${ftNiconne.className} text-5xl md:text-6xl lg:text-7xl text-gray-50 text-center font-black my-4`}
         >
-          Confecciones SB
+          Confecciones Bardales
         </h1>
         <h2
           className="text-lg md:text-xl text-gray-200 opacity-80 inline-flex flex-col my-3 md:my-4 text-center font-bold"
@@ -35,7 +50,7 @@ export const HeroSection = () => {
         <div className="cta my-3 md:my-4 flex flex-col items-center justify-center gap-2 md:gap-3">
           <Link
             href="/contacto"
-            className="cta-link text-gray-200 font-extrabold py-3 px-5 rounded-full transition-colors duration-300"
+            className="cta-link text-gray-200 font-extrabold py-3 px-5 rounded-full transition-colors duration-300 select-none"
           >
             Consulta y cotiza
           </Link>
