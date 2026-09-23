@@ -1,5 +1,5 @@
 import './HeroSection.scss';
-import { Carousel } from '../../client/Carousel/Carousel';
+import { Carousel } from '../../../client/Carousel/Carousel';
 import { Montserrat, Niconne } from 'next/font/google';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -27,7 +27,7 @@ export const HeroSection = () => {
     >
       <div className="section-content rspnsv">
         <Image
-          className="-ml-8 md:-ml-10 lg:-ml-14 w-40! md:w-50! lg:w-60! drop-shadow-md drop-shadow-orange-900"
+          className="-ml-8 md:-ml-10 lg:-ml-14 w-40! md:w-50! lg:w-60! drop-shadow-md drop-shadow-orange-400 select-none"
           src="/assets/brands/isotipo-confecciones-bardales.svg"
           alt="Isotipo de Confecciones Bardales"
           width={16}
