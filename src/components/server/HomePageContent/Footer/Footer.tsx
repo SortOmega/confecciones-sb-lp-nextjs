@@ -39,7 +39,7 @@ export function Footer() {
             </div>
 
             <div className="flex flex-col items-start gap-2.5">
-              <h2 className="mb-1 text-sm font-bold text-gray-100">Recursos</h2>
+              <h2 className="mb-1 text-sm font-bold text-gray-100">Créditos</h2>
               <a
                 className="text-sm text-gray-400 transition-all hover:translate-x-1 hover:text-rose-300 focus-visible:text-rose-300"
                 href="https://www.svgrepo.com/"
@@ -50,7 +50,7 @@ export function Footer() {
               </a>
               <a
                 className="text-sm text-gray-400 transition-all hover:translate-x-1 hover:text-rose-300 focus-visible:text-rose-300"
-                href="https://www.figma.com/"
+                href="https://www.figma.com/community/file/1313855619664359646"
                 target="_blank"
                 rel="noreferrer"
               >
