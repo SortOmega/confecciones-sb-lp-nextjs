@@ -27,7 +27,7 @@ export const HeroSection = () => {
     >
       <div className="section-content rspnsv">
         <Image
-          className="-ml-8 md:-ml-10 lg:-ml-14 w-40! md:w-50! lg:w-60! drop-shadow-md drop-shadow-orange-800"
+          className="-ml-8 md:-ml-10 lg:-ml-14 w-40! md:w-50! lg:w-60! drop-shadow-md drop-shadow-orange-900"
           src="/assets/brands/isotipo-confecciones-bardales.svg"
           alt="Isotipo de Confecciones Bardales"
           width={16}
