@@ -1,8 +1,6 @@
 import './homepage.scss';
 import '@/src/styles/responsive.scss';
-import { HeroSection } from '../';
-import { SocialProofSection } from './SocialProofSection';
-import { ValuePropositionSection } from './ValuePropositionSection';
+import { HeroSection, SocialProofSection, ValuePropositionSection } from '../';
 import { Footer } from './Footer/Footer';
 
 export function HomePageContent() {
