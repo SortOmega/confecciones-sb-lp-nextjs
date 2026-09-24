@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { DynamicDialog } from '@/src/components/shared';
 import './globals.scss';
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
     <html lang="es" className={`antialiased`}>
       <body>
         {children}
+        <DynamicDialog id="mainModal" />
       </body>
     </html>
   );
