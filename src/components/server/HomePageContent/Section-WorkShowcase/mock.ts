@@ -2,9 +2,9 @@ import { type FeaturedWork } from '@/src/utils/schemas/FeaturedWork.schema';
 
 export const FeaturedWorkList: FeaturedWork[] = [
   {
-    title: 'Identidad para Confecciones Bardales',
+    title: 'Lenks: Identidad lenca en tu prenda',
     description:
-      'Diseñamos una identidad visual cercana y memorable para presentar la calidad de cada prenda personalizada.',
+      'Una linea de nuestros productos de ropa que busca rescatar y difundir la cultura lenca a través de sus diseños, que combinan tradición y modernidad. Cada prenda es una obra de arte que refleja la riqueza de la herencia lenca y su conexión con la naturaleza de la región hondureña.',
     image:
       'https://www.dropbox.com/scl/fi/40uem5vknllqiycepnf94/confeccionesbardales-mujer-modelo1.jpg?rlkey=nkoo8hemsxcqe55gt123cx1lo&st=juvwm8v5&raw=1',
     alt: 'Isotipo de Confecciones Bardales',
