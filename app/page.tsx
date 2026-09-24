@@ -1,5 +1,5 @@
-import { HomePageContent, NavigationBar } from '@/src/components/server';
-import Image from 'next/image';
+import { HomePageContent } from '@/src/components/layout/HomePageContent';
+import { NavigationBar } from '@-components/shared';
 
 export default function HomePage() {
   return (

@@ -1,5 +1,5 @@
 import './HeroSection.scss';
-import { Carousel } from '../../';
+import { Carousel } from '../../../shared';
 import { Montserrat, Niconne } from 'next/font/google';
 import Link from 'next/link';
 import Image from 'next/image';
