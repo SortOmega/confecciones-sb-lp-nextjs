@@ -1,6 +1,6 @@
 import './WorkShowcaseSection.scss';
 import Image from 'next/image';
-import { DynamicDialogTest } from '@/src/components/shared';
+import { DynamicDialogTest, ImagePreview } from '@/src/components/shared';
 import { FeaturedWorkListSchema } from '@/src/utils/schemas/FeaturedWork.schema';
 import { FeaturedWorkList } from './mock';
 
@@ -52,6 +52,10 @@ export const WorkShowcaseSection = () => {
           ))}
         </div>
         <DynamicDialogTest />
+        <ImagePreview
+          src="https://www.dropbox.com/scl/fi/3mo1pfk1h3o5kj63tg283/confeccionesbardales-collage-lenks.jpg?rlkey=qfz30lp0g24jeo4g1xcof0nt2&st=eqo6zltc&raw=1"
+          alt="Descripción de la imagen"
+        />
       </div>
     </section>
   );
