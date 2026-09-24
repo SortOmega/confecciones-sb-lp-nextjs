@@ -6,7 +6,7 @@ export const FeaturedWorkList: FeaturedWork[] = [
     description:
       'Una linea de nuestros productos de ropa que busca rescatar y difundir la cultura lenca a través de sus diseños, que combinan tradición y modernidad. Cada prenda es una obra de arte que refleja la riqueza de la herencia lenca y su conexión con la naturaleza de la región hondureña.',
     image:
-      'https://www.dropbox.com/scl/fi/40uem5vknllqiycepnf94/confeccionesbardales-mujer-modelo1.jpg?rlkey=nkoo8hemsxcqe55gt123cx1lo&st=juvwm8v5&raw=1',
+      'https://www.dropbox.com/scl/fi/3mo1pfk1h3o5kj63tg283/confeccionesbardales-collage-lenks.jpg?rlkey=qfz30lp0g24jeo4g1xcof0nt2&st=rjyxndz7&raw=1',
     alt: 'Isotipo de Confecciones Bardales',
   },
   {
