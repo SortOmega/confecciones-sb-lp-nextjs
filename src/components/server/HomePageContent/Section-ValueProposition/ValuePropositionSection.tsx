@@ -1,5 +1,5 @@
 import './ValuePropositionSection.scss';
-import { ServiceCard } from '@/src/components/client/ServiceCard/ServiceCard';
+import { ServiceCard } from '@/src/components/server/';
 
 export const ValuePropositionSection = () => {
   return (
