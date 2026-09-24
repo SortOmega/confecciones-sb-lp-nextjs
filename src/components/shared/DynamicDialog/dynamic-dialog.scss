@@ -1,4 +1,7 @@
 .dynamic-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
   width: min(90vw, 42rem);
   max-width: 100%;
   max-height: min(85dvh, 48rem);
@@ -8,6 +11,7 @@
   background: transparent;
   color: inherit;
   overflow: visible;
+  transform: translate(-50%, -50%);
 
   &::backdrop {
     background: rgb(0 0 0 / 68%);
@@ -16,10 +20,35 @@
 }
 
 .dynamic-dialog__content {
+  display: flex;
+  flex-direction: column;
   max-height: min(85dvh, 48rem);
   overflow: auto;
   border: 1px solid rgb(255 255 255 / 14%);
   border-radius: 0.75rem;
   background: #171717;
   color: #f2f2f2;
+}
+
+.dynamic-dialog__header {
+  flex: 0 0 auto;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgb(255 255 255 / 14%);
+}
+
+.dynamic-dialog--draggable .dynamic-dialog__header {
+  cursor: move;
+  user-select: none;
+  touch-action: none;
+}
+
+.dynamic-dialog__body {
+  overflow: auto;
+}
+
+.dynamic-dialog__body--centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

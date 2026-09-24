@@ -28,7 +28,11 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
     <html lang="es" className={`antialiased`}>
       <body>
         {children}
-        <DynamicDialog id="mainModal" />
+        <DynamicDialog
+          id="mainModal"
+          draggable
+          header={<span className="text-sm font-bold text-gray-200">Confecciones SB</span>}
+        />
       </body>
     </html>
   );
