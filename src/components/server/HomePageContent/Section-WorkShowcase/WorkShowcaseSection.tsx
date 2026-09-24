@@ -1,10 +1,10 @@
 import './WorkShowcaseSection.scss';
 import Image from 'next/image';
-import { FeaturedWorkSchema } from '@/src/utils/schemas/FeaturedWork.schema';
+import { FeaturedWorkListSchema } from '@/src/utils/schemas/FeaturedWork.schema';
 import { FeaturedWorkList } from './mock';
 
 export const WorkShowcaseSection = () => {
-  const parsedWorkList = FeaturedWorkList.map((work) => FeaturedWorkSchema.parse(work));
+  const parsedWorkList = FeaturedWorkListSchema.parse(FeaturedWorkList);
 
   return (
     <section

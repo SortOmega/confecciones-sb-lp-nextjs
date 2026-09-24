@@ -7,4 +7,6 @@ export const FeaturedWorkSchema = z.object({
   alt: z.string(),
 });
 
+export const FeaturedWorkListSchema = z.array(FeaturedWorkSchema);
+
 export type FeaturedWork = z.infer<typeof FeaturedWorkSchema>;
