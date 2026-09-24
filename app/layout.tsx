@@ -31,6 +31,8 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
         <DynamicDialog
           id="mainModal"
           draggable
+          fullscreenToggle
+          showCloseButton
           header={<span className="text-sm font-bold text-gray-200">Confecciones SB</span>}
         />
       </body>

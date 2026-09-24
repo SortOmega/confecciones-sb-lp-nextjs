@@ -17,6 +17,8 @@ export type DynamicDialogProps = {
   header?: ReactNode;
   draggable?: boolean;
   centerContent?: boolean;
+  fullscreenToggle?: boolean;
+  showCloseButton?: boolean;
 };
 
 type DialogPosition = {
@@ -29,10 +31,13 @@ export function DynamicDialog({
   header,
   draggable = false,
   centerContent = true,
+  fullscreenToggle = false,
+  showCloseButton = false,
 }: DynamicDialogProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const dragStartRef = useRef<DialogPosition | null>(null);
   const [position, setPosition] = useState<DialogPosition>({ x: 0, y: 0 });
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const activeDialogId = useDynamicDialogStore((state) => state.activeDialogId);
   const content = useDynamicDialogStore((state) => state.content);
   const isOpen = useDynamicDialogStore((state) => state.isOpen);
@@ -49,6 +54,7 @@ export function DynamicDialog({
     if (isActiveDialog && isOpen) {
       if (!dialog.open) {
         setPosition({ x: 0, y: 0 });
+        setIsFullscreen(false);
         dialog.showModal();
       }
       return;
@@ -99,6 +105,10 @@ export function DynamicDialog({
     dragStartRef.current = null;
   };
 
+  const handleFullscreenToggle = () => {
+    setIsFullscreen((currentValue) => !currentValue);
+  };
+
   const renderedContent =
     isActiveDialog && content
       ? typeof content === 'function'
@@ -110,8 +120,12 @@ export function DynamicDialog({
     <dialog
       ref={dialogRef}
       id={id}
-      className={`dynamic-dialog${draggable ? ' dynamic-dialog--draggable' : ''}`}
-      style={{ transform: `translate(calc(-50% + ${position.x}px), calc(-50% + ${position.y}px))` }}
+      className={`dynamic-dialog${draggable ? ' dynamic-dialog--draggable' : ''}${isFullscreen ? ' dynamic-dialog--fullscreen' : ''}`}
+      style={{
+        transform: isFullscreen
+          ? 'none'
+          : `translate(calc(-50% + ${position.x}px), calc(-50% + ${position.y}px))`,
+      }}
       onClose={handleClose}
       onClick={handleBackdropClick}
     >
@@ -124,7 +138,35 @@ export function DynamicDialog({
             onPointerUp={handleHeaderPointerUp}
             onPointerCancel={handleHeaderPointerUp}
           >
-            {header}
+            <div className="dynamic-dialog__header-content">{header}</div>
+            {fullscreenToggle || showCloseButton ? (
+              <div className="dynamic-dialog__actions">
+                {fullscreenToggle ? (
+                  <button
+                    type="button"
+                    className="dynamic-dialog__action"
+                    aria-label={isFullscreen ? 'Restaurar ventana' : 'Ver en pantalla completa'}
+                    title={isFullscreen ? 'Restaurar ventana' : 'Ver en pantalla completa'}
+                    onPointerDown={(event) => event.stopPropagation()}
+                    onClick={handleFullscreenToggle}
+                  >
+                    {isFullscreen ? '↙' : '↗'}
+                  </button>
+                ) : null}
+                {showCloseButton ? (
+                  <button
+                    type="button"
+                    className="dynamic-dialog__action"
+                    aria-label="Cerrar diálogo"
+                    title="Cerrar diálogo"
+                    onPointerDown={(event) => event.stopPropagation()}
+                    onClick={() => close(id)}
+                  >
+                    ×
+                  </button>
+                ) : null}
+              </div>
+            ) : null}
           </div>
         ) : null}
         <div className={centerContent ? 'dynamic-dialog__body dynamic-dialog__body--centered' : 'dynamic-dialog__body'}>

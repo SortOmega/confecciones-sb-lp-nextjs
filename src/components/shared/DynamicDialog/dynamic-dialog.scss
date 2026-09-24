@@ -19,6 +19,15 @@
   }
 }
 
+.dynamic-dialog--fullscreen {
+  inset: 0;
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  border-radius: 0;
+}
+
 .dynamic-dialog__content {
   display: flex;
   flex-direction: column;
@@ -31,9 +40,43 @@
 }
 
 .dynamic-dialog__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   flex: 0 0 auto;
   padding: 1rem 1.5rem;
   border-bottom: 1px solid rgb(255 255 255 / 14%);
+}
+
+.dynamic-dialog__header-content {
+  min-width: 0;
+}
+
+.dynamic-dialog__actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.dynamic-dialog__action {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border: 0;
+  border-radius: 0.25rem;
+  background: transparent;
+  color: #f2f2f2;
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1;
+
+  &:hover,
+  &:focus-visible {
+    background: rgb(255 255 255 / 14%);
+  }
 }
 
 .dynamic-dialog--draggable .dynamic-dialog__header {
