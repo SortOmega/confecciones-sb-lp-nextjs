@@ -12,6 +12,7 @@ export type ImageVisualizerProps = {
   src: string;
   alt: string;
   className?: string;
+  autoHeight?: boolean;
 };
 
 type ImagePosition = {
@@ -23,7 +24,7 @@ const MIN_ZOOM = 1;
 const MAX_ZOOM = 4;
 const ZOOM_STEP = 0.25;
 
-export function ImageVisualizer({ src, alt, className = '' }: ImageVisualizerProps) {
+export function ImageVisualizer({ src, alt, className = '', autoHeight = true }: ImageVisualizerProps) {
   const viewportRef = useRef<HTMLDivElement>(null);
   const dragStartRef = useRef<ImagePosition | null>(null);
   const [zoom, setZoom] = useState(MIN_ZOOM);
@@ -80,7 +81,7 @@ export function ImageVisualizer({ src, alt, className = '' }: ImageVisualizerPro
     <section className={`image-preview ${className}`.trim()} aria-label={`Vista previa de ${alt}`}>
       <div
         ref={viewportRef}
-        className={`image-preview__viewport${zoom > MIN_ZOOM ? ' image-preview__viewport--zoomed' : ''}`}
+        className={`image-preview__viewport${zoom > MIN_ZOOM ? ' image-preview__viewport--zoomed' : ''} ${autoHeight ? ' h-full' : ''}`.trim()}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}

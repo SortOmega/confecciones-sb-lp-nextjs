@@ -13,15 +13,16 @@ export const ThumbnailImage = ({ srcThumbnail, srcHighRes, ...imageProps }: Thum
     const handleOpenDialog = () => {
         dynamicDialogService.open(
             'mainModal',
-            <div className="image-preview-container flex h-full w-full items-center justify-center overflow-hidden">
+
                 <ImageVisualizer
                     src={srcHighRes}
                     alt={imageProps.alt as string}
                     className="image-preview"
-                />
-            </div>,
+                    autoHeight={true}
+                />,
             {
                 draggable: true,
+                centerContent: false,
                 fullscreenToggle: true,
                 showCloseButton: true,
                 defaultFullscreen: true,
