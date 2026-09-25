@@ -1,7 +1,7 @@
 import './WorkShowcaseSection.scss';
-import Image from 'next/image';
 import { FeaturedWorkListSchema } from '@/src/utils/schemas/FeaturedWork.schema';
 import { FeaturedWorkList } from './mock';
+import { ThumbnailImage } from '@-components/shared/ThumbnailImage/ThumbnailImage';
 
 export const WorkShowcaseSection = () => {
   const parsedWorkList = FeaturedWorkListSchema.parse(FeaturedWorkList);
@@ -29,11 +29,10 @@ export const WorkShowcaseSection = () => {
               }`}
             >
               <figure className="work-showcase-image flex aspect-[4/3] w-full max-w-md shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-blue-400/60 bg-slate-800/80 p-8 shadow-xl shadow-black/20 md:w-1/2 md:p-12">
-                <Image
-                  src={work.image}
+                <ThumbnailImage
+                  srcThumbnail={work.image}
+                  srcHighRes={work.image}
                   alt={work.alt}
-                  width={320}
-                  height={240}
                   className="h-full w-full object-contain drop-shadow-lg transition-transform duration-500 hover:scale-105"
                 />
               </figure>

@@ -26,12 +26,16 @@
   max-width: none;
   max-height: none;
   border-radius: 0;
+
+  .dynamic-dialog__content {
+    height: 100%;
+  }
 }
 
 .dynamic-dialog__content {
   display: flex;
   flex-direction: column;
-  max-height: min(85dvh, 48rem);
+  // max-height: min(85dvh, 48rem);
   overflow: auto;
   border: 1px solid rgb(255 255 255 / 14%);
   border-radius: 0.75rem;
@@ -86,11 +90,13 @@
 }
 
 .dynamic-dialog__body {
-  overflow: auto;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 1fr;
+  height: 100%;
 }
 
 .dynamic-dialog__body--centered {
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
