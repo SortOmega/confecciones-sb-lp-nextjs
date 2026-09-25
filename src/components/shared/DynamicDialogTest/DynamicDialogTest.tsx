@@ -24,6 +24,13 @@ export function DynamicDialogTest() {
           Cerrar diálogo
         </button>
       </div>,
+      {
+        draggable: true,
+        fullscreenToggle: true,
+        showCloseButton: true,
+        defaultFullscreen: false,
+        header: <span className="text-sm font-bold text-gray-200">Confecciones SB</span>,
+      },
     );
   };
 

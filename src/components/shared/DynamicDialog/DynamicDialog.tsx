@@ -4,8 +4,8 @@ import {
   createElement,
   type MouseEvent,
   type PointerEvent,
-  type ReactNode,
   useEffect,
+  useEffectEvent,
   useRef,
   useState,
 } from 'react';
@@ -14,11 +14,6 @@ import './dynamic-dialog.scss';
 
 export type DynamicDialogProps = {
   id: string;
-  header?: ReactNode;
-  draggable?: boolean;
-  centerContent?: boolean;
-  fullscreenToggle?: boolean;
-  showCloseButton?: boolean;
 };
 
 type DialogPosition = {
@@ -28,11 +23,6 @@ type DialogPosition = {
 
 export function DynamicDialog({
   id,
-  header,
-  draggable = false,
-  centerContent = true,
-  fullscreenToggle = false,
-  showCloseButton = false,
 }: DynamicDialogProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const dragStartRef = useRef<DialogPosition | null>(null);
@@ -40,9 +30,19 @@ export function DynamicDialog({
   const [isFullscreen, setIsFullscreen] = useState(false);
   const activeDialogId = useDynamicDialogStore((state) => state.activeDialogId);
   const content = useDynamicDialogStore((state) => state.content);
+  const options = useDynamicDialogStore((state) => state.options);
   const isOpen = useDynamicDialogStore((state) => state.isOpen);
   const close = useDynamicDialogStore((state) => state.close);
   const isActiveDialog = activeDialogId === id;
+  const {
+    header,
+    draggable = false,
+    centerContent = true,
+    defaultFullscreen = false,
+    fullscreenToggle = false,
+    showCloseButton = false,
+  } = options;
+  const getDefaultFullscreen = useEffectEvent(() => defaultFullscreen);
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -54,7 +54,7 @@ export function DynamicDialog({
     if (isActiveDialog && isOpen) {
       if (!dialog.open) {
         setPosition({ x: 0, y: 0 });
-        setIsFullscreen(false);
+        setIsFullscreen(getDefaultFullscreen());
         dialog.showModal();
       }
       return;

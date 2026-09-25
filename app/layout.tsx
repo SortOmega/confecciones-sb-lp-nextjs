@@ -28,13 +28,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
     <html lang="es" className={`antialiased`}>
       <body>
         {children}
-        <DynamicDialog
-          id="mainModal"
-          draggable
-          fullscreenToggle
-          showCloseButton
-          header={<span className="text-sm font-bold text-gray-200">Confecciones SB</span>}
-        />
+        <DynamicDialog id="mainModal" />
       </body>
     </html>
   );
