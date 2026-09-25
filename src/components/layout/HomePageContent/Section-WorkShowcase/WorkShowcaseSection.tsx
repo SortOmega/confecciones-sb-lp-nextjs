@@ -51,11 +51,11 @@ export const WorkShowcaseSection = () => {
             </article>
           ))}
         </div>
-        <DynamicDialogTest />
+        {/* <DynamicDialogTest />
         <ImagePreview
           src="https://www.dropbox.com/scl/fi/3mo1pfk1h3o5kj63tg283/confeccionesbardales-collage-lenks.jpg?rlkey=qfz30lp0g24jeo4g1xcof0nt2&st=eqo6zltc&raw=1"
           alt="Descripción de la imagen"
-        />
+        /> */}
       </div>
     </section>
   );
