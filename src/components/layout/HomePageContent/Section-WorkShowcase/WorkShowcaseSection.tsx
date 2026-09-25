@@ -1,6 +1,5 @@
 import './WorkShowcaseSection.scss';
 import Image from 'next/image';
-import { DynamicDialogTest, ImagePreview } from '@/src/components/shared';
 import { FeaturedWorkListSchema } from '@/src/utils/schemas/FeaturedWork.schema';
 import { FeaturedWorkList } from './mock';
 

@@ -6,9 +6,9 @@ import {
   useRef,
   useState,
 } from 'react';
-import './image-preview.scss';
+import './image-visualizer.scss';
 
-export type ImagePreviewProps = {
+export type ImageVisualizerProps = {
   src: string;
   alt: string;
   className?: string;
@@ -23,7 +23,7 @@ const MIN_ZOOM = 1;
 const MAX_ZOOM = 4;
 const ZOOM_STEP = 0.25;
 
-export function ImagePreview({ src, alt, className = '' }: ImagePreviewProps) {
+export function ImageVisualizer({ src, alt, className = '' }: ImageVisualizerProps) {
   const viewportRef = useRef<HTMLDivElement>(null);
   const dragStartRef = useRef<ImagePosition | null>(null);
   const [zoom, setZoom] = useState(MIN_ZOOM);
