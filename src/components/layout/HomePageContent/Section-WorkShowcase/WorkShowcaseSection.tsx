@@ -9,7 +9,7 @@ export const WorkShowcaseSection = () => {
   return (
     <section
       id="work-showcase-section"
-      className="work-showcase-section relative flex w-full flex-col items-center justify-center gap-4 px-4 py-20 md:gap-8 md:px-8 md:py-28"
+      className="work-showcase-section relative flex w-full flex-col items-center justify-center gap-4 px-4 pt-20 pb-4 md:gap-8 md:px-8 md:pt-28 md:pb-6"
     >
       <div className="section-content rspnsv max-w-6xl">
         <h3 className="my-4 text-center text-2xl font-black text-gray-50 md:text-3xl">
