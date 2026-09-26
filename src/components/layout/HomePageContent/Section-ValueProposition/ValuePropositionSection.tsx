@@ -11,7 +11,7 @@ export const ValuePropositionSection = () => {
         <div className="circle-dark"></div>
       </div>
       <div className="section-content rspnsv mt-20 md:mt-28">
-        <h3 className="text-2xl md:text-3xl text-gray-50 text-center font-black my-4">
+        <h3 className="text-3xl md:text-4xl text-gray-50 text-center font-black my-4">
           Nuestros Servicios
         </h3>
 

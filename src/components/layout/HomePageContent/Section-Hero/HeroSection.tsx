@@ -35,7 +35,7 @@ export const HeroSection = () => {
           loading="eager"
         />
         <h1
-          className={`${ftNiconne.className} text-5xl md:text-6xl lg:text-7xl text-gray-50 text-center font-black my-4`}
+          className={`${ftNiconne.className} text-6xl md:text-8xl lg:text-9xl text-gray-50 text-center font-black my-4`}
         >
           Confecciones Bardales
         </h1>
