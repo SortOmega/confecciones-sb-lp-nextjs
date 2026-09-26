@@ -41,7 +41,7 @@ export const WorkShowcaseSection = () => {
                 {/* <span className="mb-3 block text-xs font-bold uppercase tracking-[0.2em] text-pink-300">
                   Proyecto {String(index + 1).padStart(2, '0')}
                 </span> */}
-                <h4 className="text-xl font-extrabold text-pink-300 md:text-2xl">{work.title}</h4>
+                <h4 className="text-xl font-extrabold text-rose-400 md:text-2xl">{work.title}</h4>
                 <p className="mt-3 text-sm leading-7 text-gray-300 md:text-base">
                   {work.description}
                 </p>
