@@ -1,6 +1,12 @@
 import './homepage.scss';
 import '@/src/styles/responsive.scss';
-import { HeroSection, SocialProofSection, ValuePropositionSection, WorkShowcaseSection } from '.';
+import {
+  CtaSection,
+  HeroSection,
+  SocialProofSection,
+  ValuePropositionSection,
+  WorkShowcaseSection,
+} from '.';
 import { Footer } from '../Footer';
 
 export function HomePageContent() {
@@ -10,6 +16,7 @@ export function HomePageContent() {
       <SocialProofSection />
       <ValuePropositionSection />
       <WorkShowcaseSection />
+      <CtaSection />
       <Footer />
     </main>
   );
