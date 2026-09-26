@@ -1,5 +1,5 @@
-import { HomePageContent } from '@/src/components/layout/HomePageContent';
-import { NavigationBar } from '@-components/shared';
+import { HomePageContent } from '@-components/layout/HomePageContent';
+import { NavigationBar } from '@-components/layout/NavigationBar';
 
 export default function HomePage() {
   return (
