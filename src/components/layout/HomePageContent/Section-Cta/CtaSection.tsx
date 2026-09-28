@@ -2,6 +2,7 @@
 
 import './cta-section.scss';
 import { SubmitEvent, useState } from 'react';
+import Image from 'next/image';
 
 const destinationEmail = 'sortocarlo755@gmail.com';
 const phoneNumber = 'Número de teléfono pendiente';
@@ -49,7 +50,7 @@ export function CtaSection() {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="text-base leading-none text-rose-300" aria-hidden="true">◔</span>
+              <Image src="/assets/icons/whatsapp-filled-svgrepo-com.svg" alt="WhatsApp" width={24} height={24} />
               WhatsApp
             </a>
             <a
@@ -58,7 +59,7 @@ export function CtaSection() {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="text-base leading-none text-rose-300" aria-hidden="true">f</span>
+              <Image src="/assets/icons/facebook-svgrepo-com.svg" alt="Facebook" width={24} height={24} />
               Facebook
             </a>
             <a
@@ -67,7 +68,7 @@ export function CtaSection() {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="text-base leading-none text-rose-300" aria-hidden="true">➤</span>
+              <Image src="/assets/icons/telegram-svgrepo-com.svg" alt="Telegram" width={24} height={24} />
               Telegram
             </a>
           </div>

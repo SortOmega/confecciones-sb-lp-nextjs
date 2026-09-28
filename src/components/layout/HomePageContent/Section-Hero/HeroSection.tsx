@@ -35,7 +35,7 @@ export const HeroSection = () => {
           loading="eager"
         />
         <h1
-          className={`${ftNiconne.className} text-6xl md:text-8xl lg:text-9xl text-gray-50 text-center font-black my-4`}
+          className={`${ftNiconne.className} text-6xl md:text-8xl text-gray-50 text-center font-black my-4`}
         >
           Confecciones Bardales
         </h1>
@@ -49,7 +49,7 @@ export const HeroSection = () => {
 
         <div className="cta my-3 md:my-4 flex flex-col items-center justify-center gap-2 md:gap-3">
           <Link
-            href="/contacto"
+            href="/#cta-section"
             className="cta-link text-gray-200 font-extrabold py-3 px-5 rounded-full transition-colors duration-300 select-none"
           >
             Consulta y cotiza
