@@ -50,7 +50,12 @@ export function CtaSection() {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src="/assets/icons/whatsapp-filled-svgrepo-com.svg" alt="WhatsApp" width={24} height={24} />
+              <Image
+                src="/assets/icons/whatsapp-filled-svgrepo-com.svg"
+                alt="WhatsApp"
+                width={24}
+                height={24}
+              />
               WhatsApp
             </a>
             <a
@@ -59,7 +64,12 @@ export function CtaSection() {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src="/assets/icons/facebook-svgrepo-com.svg" alt="Facebook" width={24} height={24} />
+              <Image
+                src="/assets/icons/facebook-svgrepo-com.svg"
+                alt="Facebook"
+                width={24}
+                height={24}
+              />
               Facebook
             </a>
             <a
@@ -68,7 +78,12 @@ export function CtaSection() {
               target="_blank"
               rel="noreferrer"
             >
-              <Image src="/assets/icons/telegram-svgrepo-com.svg" alt="Telegram" width={24} height={24} />
+              <Image
+                src="/assets/icons/telegram-svgrepo-com.svg"
+                alt="Telegram"
+                width={24}
+                height={24}
+              />
               Telegram
             </a>
           </div>
@@ -129,28 +144,70 @@ export function CtaSection() {
 
           <address className="grid gap-5 pt-3 not-italic">
             <div className="flex items-start gap-4">
-              <span className="grid size-10 shrink-0 place-items-center rounded-full border border-rose-200/35 text-lg text-rose-300" aria-hidden="true">✉</span>
+              <span
+                className="grid size-10 shrink-0 place-items-center rounded-full border border-rose-200/35 text-lg text-rose-300"
+                aria-hidden="true"
+              >
+                <Image
+                  src="/assets/icons/mail5-svgrepo-com.svg"
+                  alt="Email"
+                  width={24}
+                  height={24}
+                />
+              </span>
+
               <span>
                 <small className="mb-1 block text-[0.7rem] font-extrabold uppercase tracking-[0.08em] text-slate-200/55">
                   Correo destino
                 </small>
-                <a className="block text-[0.95rem] font-bold text-slate-50 hover:text-rose-300 focus-visible:text-rose-300" href={`mailto:${destinationEmail}`}>
+                <a
+                  className="block text-[0.95rem] font-bold text-slate-50 hover:text-rose-300 focus-visible:text-rose-300"
+                  href={`mailto:${destinationEmail}`}
+                >
                   {destinationEmail}
                 </a>
               </span>
             </div>
             <div className="flex items-start gap-4">
-              <span className="grid size-10 shrink-0 place-items-center rounded-full border border-rose-200/35 text-lg text-rose-300" aria-hidden="true">☎</span>
+              <span
+                className="grid size-10 shrink-0 place-items-center rounded-full border border-rose-200/35 text-lg text-rose-300"
+                aria-hidden="true"
+              >
+                <Image
+                  src="/assets/icons/phone-calling-svgrepo-com.svg"
+                  alt="Email"
+                  width={24}
+                  height={24}
+                />
+              </span>
               <span>
-                <small className="mb-1 block text-[0.7rem] font-extrabold uppercase tracking-[0.08em] text-slate-200/55">Teléfono</small>
-                <strong className="block text-[0.95rem] font-bold text-slate-50">{phoneNumber}</strong>
+                <small className="mb-1 block text-[0.7rem] font-extrabold uppercase tracking-[0.08em] text-slate-200/55">
+                  Teléfono
+                </small>
+                <strong className="block text-[0.95rem] font-bold text-slate-50">
+                  {phoneNumber}
+                </strong>
               </span>
             </div>
             <div className="flex items-start gap-4">
-              <span className="grid size-10 shrink-0 place-items-center rounded-full border border-rose-200/35 text-lg text-rose-300" aria-hidden="true">⌖</span>
+              <span
+                className="grid size-10 shrink-0 place-items-center rounded-full border border-rose-200/35 text-lg text-rose-300"
+                aria-hidden="true"
+              >
+                <Image
+                  src="/assets/icons/address-svgrepo-com.svg"
+                  alt="Address"
+                  width={24}
+                  height={24}
+                />
+              </span>
               <span>
-                <small className="mb-1 block text-[0.7rem] font-extrabold uppercase tracking-[0.08em] text-slate-200/55">Dirección física</small>
-                <strong className="block text-[0.95rem] font-bold text-slate-50">{physicalAddress}</strong>
+                <small className="mb-1 block text-[0.7rem] font-extrabold uppercase tracking-[0.08em] text-slate-200/55">
+                  Dirección física
+                </small>
+                <strong className="block text-[0.95rem] font-bold text-slate-50">
+                  {physicalAddress}
+                </strong>
               </span>
             </div>
           </address>
